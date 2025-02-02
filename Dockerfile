@@ -1,7 +1,6 @@
 FROM python:3.8-slim-buster
 
 RUN apt update -y && apt install awscli -y
-RUN apt-get install gcc
 WORKDIR /app
 
 COPY . /app
